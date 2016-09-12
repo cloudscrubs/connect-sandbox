@@ -2,11 +2,21 @@
   <head>
     <title>Seeding Test</title>
   <body>
+
     <div>
-      <h1> Select a File to Seed </h1>
+      <h1>Start Sharing</h1>
       <form>
         Select a file: <input id="seed_file" type="file"><br>
         <p id="seed_log"></p>
+      </form>
+    </div>
+
+    <div>
+      <h1>Start Downloading</h1>
+      <form>
+        Download from a MagnetLink or InfoHash:
+        <input id="torrentId" type="text"><input id="start_download" type="submit" value="Download">
+        <p id="download_log"></p>
       </form>
     </div>
     <script src="webtorrent.min.js" type="text/javascript"></script>
